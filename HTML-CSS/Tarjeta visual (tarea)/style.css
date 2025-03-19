@@ -1,37 +1,38 @@
+/*Edicion de la letra*/
 h4 
 {
     color: orange;
-}
-.container
-{
-    background-color: rgb(68, 66, 66);
-    height: 150px; /*Alto*/
-    width: 500px; /*Ancho*/
-
-    display: flex;
-    border-radius: 5%; /*No cambia el borde de mi imagen*/
-    /*align-items: center; 
-    justify-content: center;
- Mi bloque no se centra de forma verticaal ni horizontal*/
-
-}
-body
-{
-    background-color: black;
-}
-.imagen
-{
-    display: flex;
-    width: 195px;
-    height: 130px;
-    margin: 10px 18px ;
-    border-radius: 10%; /*No puedo redonder bordes y nose por que*/
-}
-h2,h4,h5
-{
-    margin: 1%;
+    margin: 0px;
 }
 h2,h5
 {
     color: ivory;
+    margin: 0px; /*Por defecto la letra tiene margen*/
 }
+.Espacio
+{
+    margin-top: 3% ; /*Arriba- derecha - abajo - izquierda*/
+}
+
+/*Edicion de cajas*/
+.container
+{
+    background-color: rgb(68, 66, 66);
+    /*height: 150px; /*Alto*/
+    width: 600px; /*Ancho*/
+
+    display: flex;
+    gap: 10px; /*Espacio entre la imagen y el parrafo*/
+    border-radius: 5%; /*No cambia el borde de mi imagen*/
+
+}
+body
+{
+    background-color: rgb(153, 147, 147);
+}
+img
+{
+    width: 45%;
+    border-radius: 5% 0% 0% 5%; /*Las puntas pueden editarse si pongo 4 valores (un valor para cada una)*/
+}
+
