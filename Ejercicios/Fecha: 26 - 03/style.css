@@ -1,0 +1,35 @@
+.bloque
+{
+    display: block; /*Ocupa todo el renglon a pesar del ancho que le modifique*/
+    background-color: rgb(149, 223, 223);
+    margin: 5px; /*del borde afuera*/
+    padding: 15px; /*del elemento al borde*/
+    width: 270px;
+
+    /*Se diferencia al inline-block porque empieza desde lo mas grande (inline-blocke empieza de lo mas chico)*/
+}
+.en-linea
+{
+    display: inline;
+    background-color: rosybrown;
+    margin: 30px;/*Con el margen solo se separan los elementos, pero su tamañño NO CAMBIA*/
+    padding: 10px;/*Con el padding, el elemnto al estar centrado en la caja, la caja puede aparentar agrandarse (PERO EL ESPACIO ENTRE EL TEXTO Y EL BORDE ES LO UNICO AFECTADO)*/
+    width: 60px;
+    height: 90px;
+}
+.Inline-block
+{
+    display: inline-block;
+    background-color: rgb(235, 164, 139);
+    /*padding: 50px; Puede arruinar el estructura en el cambio de tamaño en pantalla (romper)*/
+    margin: 20px; /*separacion de elementos*/
+    width: 100px;
+    height: 100;
+    text-align: center; /*Mas practico para alinear contenido desde el ancho que querramos*/
+}
+.flex-container
+{
+    display: flex;
+    justify-content: space-around; /*Between: Sin espacio en las puntas. Around: */
+    background-color: rgb(143, 143, 245);
+}
