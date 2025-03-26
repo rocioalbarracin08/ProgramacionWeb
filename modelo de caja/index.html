@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modelo de cajas</title>
+</head>
+<body>
+    <div>
+        <h1>Displays</h1>
+        <ul>
+            <li>
+                <h2>Block</h2>  <!--Toma el espacio completo de la pantalla (la caja es modificable)--> 
+                <div class="Block">Elemento 1</div>
+                <div class="Block">Elemnto 2</div>
+            </li>
+            <li><!-- -->
+                <h2>Inline</h2>  <!--Toma solo el espcaio que tiene el contenido (no acepta modificaccion de ancho ni un alto)-->
+                <span class="inline">Elemento 1</span>
+                <span class="inline">Elemento 2</span>
+            </li>
+            <li>
+                <h2>inline block</h2> <!--Modificable -->
+                <div class="inline-block">Elemento 1</div>
+                <div class="inline-block">Elemento 2</div>
+            </li>
+            <li>
+                <h2>Flex</h2> <!-- -->
+                <div class="flex-container">
+                    <div class="flex-item">Elemnto 1</div>
+                    <div class="flex-item">Elemnto 2</div>
+                    <div class="flex-item">Elemento 3</div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</body>
+</html>
