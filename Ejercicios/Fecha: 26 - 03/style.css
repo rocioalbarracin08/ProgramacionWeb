@@ -33,3 +33,55 @@
     justify-content: space-around; /*Between: Sin espacio en las puntas. Around: */
     background-color: rgb(143, 143, 245);
 }
+.contenedor-padre
+{
+    height: 500px;    
+    background-color: rgb(65, 65, 134);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*Se ordenan en columna  los elementos del contenedor padre*/
+    /*margin: 20px;*/
+}
+.contenedor
+{
+    background-color: rgba(92, 149, 224, 0.801);
+
+    width: 40%; /*Porcentaje para que sea responsivo /ancho y alto del espacio, no afecta a los elementos*/
+    height: 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /*justify-content: space-evenly; ¿Por que si pongo margin, no cambia el formulario su margen?*/
+}
+a,.Bienvenido
+{
+    text-decoration: none;
+    color: rgb(189, 212, 255);
+}
+.enlaces
+{
+    margin-top: 8px;
+}
+.Bienvenido
+{
+    margin-top: 17%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input
+{
+    margin-bottom: 1%;
+    height: 8%;
+    border-radius: 8px;
+}
+button
+{
+    width: 68%;
+    margin-top: 2%;
+    height: 10%;
+    color: rgb(189, 212, 255);
+    background-color: rgb(92, 118, 165);
+    border-radius: 8px;
+}
