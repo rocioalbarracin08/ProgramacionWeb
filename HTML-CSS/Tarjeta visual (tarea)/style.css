@@ -1,38 +1,53 @@
 /*Edicion de la letra*/
-h4 
+.textDif 
 {
     color: orange;
     margin: 0px;
 }
 h2,h5
 {
-    color: ivory;
+    font-family: sans-serif;
+    color: rgb(255, 255, 252);
     margin: 0px; /*Por defecto la letra tiene margen*/
+}
+h6
+{
+    color: rgb(179, 175, 175);
+    margin: 0%;
 }
 .Espacio
 {
-    margin-top: 3% ; /*Arriba- derecha - abajo - izquierda*/
+    margin: 7% 0% ; /*Arriba- derecha - abajo - izquierda
+    1*vertical - 2*horizontal */
 }
 
 /*Edicion de cajas*/
 .container
 {
-    background-color: rgb(68, 66, 66);
+    background-color: rgb(73, 72, 72);
     /*height: 150px; /*Alto*/
-    width: 600px; /*Ancho*/
-
+    width: 45%; /*Ancho*/
     display: flex;
     gap: 10px; /*Espacio entre la imagen y el parrafo*/
-    border-radius: 5%; /*No cambia el borde de mi imagen*/
-
+    border-radius: 3%; /*No cambia el borde de mi imagen*/
 }
 body
 {
-    background-color: rgb(153, 147, 147);
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center; /*Por que no funciona si pongo... no lo alinea en eje Y */
 }
 img
 {
     width: 45%;
     border-radius: 5% 0% 0% 5%; /*Las puntas pueden editarse si pongo 4 valores (un valor para cada una)*/
+    
+
+    /*object fit, aspect ratio -> mdn (ejemplos visuales para cambios - Documentacion confiable)*/
+}
+.parrafo
+{
+    margin-bottom: 2%;
 }
 
