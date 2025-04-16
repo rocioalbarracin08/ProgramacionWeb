@@ -1,18 +1,45 @@
 body
 {
     background-image: url(./imagenes/fondo2.jpeg);
+/*  background-repeat: no-repeat ; 
+    background-size: cover; 
+    background-position: center;
+    -> Paraque no repita la mini imagen / EVITAR PONER IMAGENES PEQUEÑAS */
 }
 .grilla
+/*la idea de grilla se emplea para aludir a una cuadrícula, una reja, una red, un enrejado, una rejilla o una parrilla.*/
 {
     display: grid; /*Predisponer estructura en forma de grilla*/
     /*grid-template-columns: 100px 100px 100px 100px ; -> Propiedad para establecer una plantilla de columnas*/
     /*grid-template-columns: repeat(3, 200px); -> Le decimos 3 columnas de 200 pixeles con una funcion*/
     grid-template-columns: repeat(3,1fr); /*"fr" es una fraccion y divide la página en la cantidad que diga el primer valor de la función*/
-    grid-auto-rows: auto;
+    grid-auto-rows: auto; /*Alto de las columnas (si tengo 6 columnas, pero anteriormente habia puesto division de 3, las otras 3 se van abajo y cnvendria usar auto para una distancia entre ellas automatica)*/
+    gap: 20px; 
+    /*Espacio entre objetos de la caja, sea de forma vertical y horizontal (modifica los dos al mismo tiempo)*/
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));/**/
 }
 img
 {
     width: 100%;
-    object-fit: cover; /*El fill rompe para los costados, el cover es para / Para rellenar el contenedor con la imagen*/
-    aspect-ratio: 1/1; /*"1/1" /Normalizar la estructura de todas las fotos (afecta si no todas son cuadradas, en caso de tener rectangulares horizontal o vertical)*/
+    object-fit: cover; 
+    /*El fill rompe para los costados, el cover es para / Para rellenar el contenedor con la imagen*/
+    aspect-ratio: 1/1; 
+    /*"1/1" /Normalizar la estructura de todas las fotos (afecta si no todas son cuadradas, en caso de tener rectangulares horizontal o vertical)*/
+    background-color: aqua;
+}
+/*--------------------------MEDIA QUERY--------------------------*/
+/*DATO: El orden en que ubico las media, afecta en la amodificacion. Empezar de arriba abajo*/
+@media (max-width: 1024px)
+{
+    .grilla
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 768px) /*Cuando haya esta medida, van haber cambios en las clases o etiquetas que pongamos dentro*/
+{
+    .grilla
+    {
+        grid-template-columns: 1fr;
+    }
 }
