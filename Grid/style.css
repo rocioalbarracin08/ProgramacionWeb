@@ -1,0 +1,18 @@
+body
+{
+    background-image: url(./imagenes/fondo2.jpeg);
+}
+.grilla
+{
+    display: grid; /*Predisponer estructura en forma de grilla*/
+    /*grid-template-columns: 100px 100px 100px 100px ; -> Propiedad para establecer una plantilla de columnas*/
+    /*grid-template-columns: repeat(3, 200px); -> Le decimos 3 columnas de 200 pixeles con una funcion*/
+    grid-template-columns: repeat(3,1fr); /*"fr" es una fraccion y divide la página en la cantidad que diga el primer valor de la función*/
+    grid-auto-rows: auto;
+}
+img
+{
+    width: 100%;
+    object-fit: cover; /*El fill rompe para los costados, el cover es para / Para rellenar el contenedor con la imagen*/
+    aspect-ratio: 1/1; /*"1/1" /Normalizar la estructura de todas las fotos (afecta si no todas son cuadradas, en caso de tener rectangulares horizontal o vertical)*/
+}
