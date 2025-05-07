@@ -25,7 +25,8 @@ const edad = 20;
 if (edad > 10)
 {
     console.log("Sos mayor de edad")
-}else {
+}
+else {
     console.log("No sos mayor de edad")
 }
 
@@ -45,6 +46,7 @@ function saludar (nombre)
 }
 console.log(saludar("Ro"));
 
+
 /* ----- ARROW function ----- */
 //return explicito
 const saludarExpli = (nombre)=> {
@@ -55,7 +57,8 @@ const saludarExpli = (nombre)=> {
 const saludo = (nombre) =>`hola ${nombre}`; //return implicito
 //Si el return implicito tiene más de una linea va estar envuelto en parentesis
 
-/* ----- Arreglos o arrays ----- */
+
+/* ----- Arreglos o arrays ----- (no todas las listas son arrays) --------------*/
 const miArreglo = [1,2,"pepito",true];
 console.log(miArreglo[2])
 
@@ -68,3 +71,5 @@ for (let i = 0; i < miArreglo.length; i++)
 {
     console.log(miArreglo[i]) //
 }
+
+/*LOS OBJETOS TIENEN clave y valor*/ 
