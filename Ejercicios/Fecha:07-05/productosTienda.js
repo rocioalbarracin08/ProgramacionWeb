@@ -4,7 +4,7 @@ const producto1 = {
     categoria: "accesorios"
 }
 const producto2 = {
-    nombre:    'vaso tèrmico',
+    nombre:    'vaso térmico',
     precio:     34000,
     categoria: "accesorios"
 }
@@ -25,7 +25,7 @@ const productos = [] // El push solo funciona en arreglos y estos se definen con
 productos.push(producto1, producto2, producto3, producto4); //Agregamos productos al array de productos (todo lo que recibe son objetos)
 
 //2
-productos.forEach((producto, posicion) => {
+productos/*Recorre */.forEach((producto, posicion) => {
     console.log("Producto: ", producto.nombre, "---> Es el producto Nro: ", posicion +1)
 })/*Uso "producto.nombre" para usarlo como nombre de producto. Producto se ubica en todos los datos del producto, nombre se ubica en clave dentro del objeto (tipo de dato)*/
 

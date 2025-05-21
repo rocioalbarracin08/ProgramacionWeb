@@ -7,7 +7,10 @@ boton.addEventListener("click", function(){
     
     let container = document.getElementById("contenedor")
     
-    const parrafo = document.createElement("li"); // lo que esta dentro del paréntesis puede ser un párrafo, una lista u otro elemento (cambiar la etiqueta en el html según el que ponga)
-    parrafo.textContent = actividad;
-    container.append(parrafo);
+    const lista = document.createElement("li"); // lo que esta dentro del paréntesis puede ser un párrafo, una lista u otro elemento (cambiar la etiqueta en el html según el que ponga)
+    lista.textContent = actividad;
+    container.append(lista);
 });
+
+//captura con id 
+//Crear elementos "createElement"
