@@ -1,0 +1,63 @@
+.contenedor-padre
+{
+    height: 500px;    
+    background-color: rgb(65, 65, 134);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    /*Se ordenan en columna  los elementos del contenedor padre*/
+    /*margin: 20px;*/
+}
+.contenedor
+{
+    background-color: rgba(92, 149, 224, 0.801);
+
+    width: 27%; /*Porcentaje para que sea responsivo /ancho y alto del espacio, no afecta a los elementos*/
+    height: 65%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*justify-content: space-evenly; ¿Por que si pongo margin, no cambia el formulario su margen?*/
+}
+.enlaces, .volver
+{
+    /*Los enlaces lo me quedan centrados cuando la pantalla es pequeña*/
+    margin: 1% 10%; /*¿Se puede centrar sin estar calculando por cada numer?- Quiero que el texto tambien sea centrado con su alineación */
+    text-decoration: none;
+    color: rgb(189, 212, 255);
+}
+.Bienvenido
+{
+    margin-top: 10%;
+    font-family: sans-serif;
+    color: rgb(189, 212, 255);
+}
+input, button
+{   /*Mismas características*/
+    width: 75%;
+    height: 10%;
+    border-radius: 3px;
+    border: none; /*El borde marcado con negro (por defecto) es quitado*/
+}
+input
+{
+    margin: 1%;
+    color: rgb(184, 179, 179);
+    font-family: sans-serif;
+}
+button
+{
+    margin: 5% 0%; /* MARGEN -> Vertical(top-botton)-Horizontal(left-right)*/
+    color: rgb(68, 87, 124);
+    background-color: rgb(165, 193, 247);
+}
+.lista 
+{
+    background-color: brown;
+    display: flex;
+    justify-content: baseline;
+}
