@@ -1,0 +1,76 @@
+--------------REACT---------------------
+react: apunta a componentes (fracciones chiquitas)
+Es como flask en python (interfaz)
+ej: une html y javascript
+Los componentes cuando se declaran siempre arracan con mayuscula. ej: My button -> nombre de una función
+RETORNAN la estética - Estética: interfaz - Lo que va dentro del return es html - SIEMPRE VA HABER UN html return
+"Solo puede tener un hijo": dentro del return solo un botón
+jsx: nuevo híbrido, nueva extención
+SEO: google (No impactan en el SEO)
+
+- Podemos anidar: una funcion dentro de otro
+
+vite: nos da el programa que nos arma el proyecto, hace el primer setapeo
+SWC: compilador
+años que viene typescript
+
+---------------package.json-------------------------
+Aca adentro hay: dependencias( dependencias: utilidades y funcionalidades que instalamos (ayudan a la página ej slider que ayuda la página, o un carrucel, estetica de la página) / Las de desarrollo son la para nosotros (ej: error de tipado o mala escritura me afecta a mi, sline me ayuda a mi)), nombre interno, dependecnias 
+TODO la informacion interna IMPORTANTE (SI NO LO TIENE NO FUNCIONA)
+
+-------------------
+MAIN: El css (básico, o más genérico) global en el cual definimos todo diseño, se importa en MAIN
+TSCONFIG.json: Definen comfigura
+ ------------------
+ Cógido quitado de "App.tsx"
+ <div>
+        <a href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.tsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+-----------------------------
+
+Source: SIEMPRE una carpeta de componentes "components"
+
+------------------------------
+Hay dos tipos de export
+- "export default variable_exportar" o export no nombrado -> Permite renombramiento al momento de importarlo, es más flexible pero propenso a errores
+- export nombrado -> con "{}" No se le puede cambiar el nombre
+Unos nos da mas flexibilidad y el otro más probabilidad de error
+
+------------------------
+/componentes
+Componentes: Generalmente cada uno tiene su  archivo donde se proporciona su función (componente por función)
+-----------------------
+
+PROPS: Son valores que podemos pasar a los componenetes para que los tomen y los usen (comp. realiza una acción)
+ejemplo de ubicación en App.tsx (donde importamos)
+DELEGAR FUNCIONALIDADES El Prop se ubica antes de terminar el "/>"
+ <Proveedor name = {"Federico"} />
+
+-----------------------
+typescript: extencion ".tsx" (para el año que viene)
+
+--------------------------------------2doTema
+Hooks/ganchos: Base de react, son para 
+una suerte de funciones, nos permiten usar funciones
+funciones que ejecutan
+arrancan con las palabras "use" y arracnca en minúscula
+
+- useEffects: 
+- useState: Guardar datos en una variable (tiene la variable y una funcion actualizadora)
