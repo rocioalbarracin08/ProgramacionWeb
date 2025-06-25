@@ -1,0 +1,33 @@
+Segunda parte de React
+----------------------
+Hooks: 
+Eventos:
+
+#Las variables de ntorno no se suben al git
+
+
+-------------------------------------------
+Instalaciones necesarias: node modules ("npm install" en la terminal)
+
+Entra por cadena (al ejecutarse) -> packajson y node_modules
+ESTAR PARADOS DONDE ESTA EL packajson (al correr)
+Comando para ejecuatar/correr: npm run dev  -> instalamos ANTERIORMENTE las dependencias
+
+ERRORES PUNTUALES: ubicacion o falta de Instalacion de dependencias.
+
+-------------------------------------------
+capturar el evento de un boton -> event.target.value
+event(variable de la funcion)
+target.value (objeto)
+
+const [state, setState] = useState(initialState)
+
+-------------------------------------------
+// "Pasamos la funcion pero NO la ejecucion de la funcion"
+//Pasar la funcion "nombre_funcion" (SIN PARENTESIS AL FINAL) -> AHORA
+//Para ejecutar en el momento (sin esperar nada) "nombre_funcion ()" (CON PARENTESIS AL FINAL) -> ANTES
+
+{nombre === "" ? <>hola</>: <>chau</>}   -> OTRA FORMA DE HACER UN IF (la que usamos)
+Si nombre es un string vacío, mostrar "hola". Sino mostrar chau
+
+{nombre && <h2>{nombre}</h2>}   -> Mostrar nombre cuando HAY un nombre

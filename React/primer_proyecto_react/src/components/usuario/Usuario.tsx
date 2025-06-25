@@ -5,3 +5,4 @@ function Usuario(){
 }
 export default Usuario 
 //Tiene que tener la misma extención que en el archivo que se va importar
+//

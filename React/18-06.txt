@@ -72,5 +72,6 @@ una suerte de funciones, nos permiten usar funciones
 funciones que ejecutan
 arrancan con las palabras "use" y arracnca en minúscula
 
-- useEffects: 
+- useEffect: 
 - useState: Guardar datos en una variable (tiene la variable y una funcion actualizadora)
+ Ej: const [state, setState] = useState(initialState) - setState: suele ser la función
