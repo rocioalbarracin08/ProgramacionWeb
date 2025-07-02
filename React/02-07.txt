@@ -1,0 +1,28 @@
+----------------------
+Ejecutar en la terminal
+
+1 - npm install (Donde se encuentra el archivo "package.json")
+2 - npm run dev
+----------------------
+Ejemplo práctico:
+const handleInputChange = (event) => {
+        //console.log(event)
+        setPalabra(event.target.value) //Le pasamos ese valor por parámetro a la función "setPalabra"
+    }
+    //"event" tiene un objeto muy extenso. 
+    // Accedemos a la propiedad que enecesitamos de ese objeto, a travez del "."
+    // por eso tenemos "(event.target.value)"
+
+----------------------
+SIEMPRE usamos "handle" al principio del nombre de una funcion flecha DERIVADA de un evento.
+//Nombre puesto por convención
+----------------------
+Evento: Interaccion del usuario con el servicio o código
+
+----------------------
+export: Importa con el nombre ORIGINAL
+
+
+usseEffect: Funcion que ejecuta lo que tiene dentro del bloque de llaves. Previo al renderizado. 
+Si hay un dato de adentro actualizable, se actualiza la página. 
+Permite que la página sea actualizable

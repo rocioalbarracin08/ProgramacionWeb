@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 
-
 export function RickMorty(){
     const [characters, setCharacter] = useState([]) 
-    //En este caso "()" y "[]" porque traemos un array
+    //En este caso "([])" porque traemos un array (una lista de letras)
     //valor inicial-> los [] (puedo poner lo que sea) -> Se guarda en la variable character -> Se actualiza con la funcion setCharacter()
 
     useEffect(()=>{
@@ -19,12 +18,9 @@ export function RickMorty(){
     <> 
       {characters ? ( //?: Sí...
         characters.map( (item, index) => <p>{item.name}</p>)
-      ): (
-        <> Cargando...</>
-      )}
+      ):
+      (<> Cargando...</>) }
       Hola mundo 
       <button>Hola soy un botón</button> 
-      
-    </> )
-    ;
+    </> );
 }

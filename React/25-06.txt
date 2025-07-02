@@ -23,10 +23,11 @@ target.value (objeto)
 const [state, setState] = useState(initialState)
 
 -------------------------------------------
-// "Pasamos la funcion pero NO la ejecucion de la funcion"
-//Pasar la funcion "nombre_funcion" (SIN PARENTESIS AL FINAL) -> AHORA
-//Para ejecutar en el momento (sin esperar nada) "nombre_funcion ()" (CON PARENTESIS AL FINAL) -> ANTES
+"Pasamos la funcion pero NO la ejecucion de la funcion"
+Pasar la funcion "nombre_funcion" (SIN PARENTESIS AL FINAL) -> AHORA
+Para ejecutar en el momento (sin esperar nada) "nombre_funcion ()" (CON PARENTESIS AL FINAL) -> ANTES
 
+-------------------------------------------
 {nombre === "" ? <>hola</>: <>chau</>}   -> OTRA FORMA DE HACER UN IF (la que usamos)
 Si nombre es un string vacío, mostrar "hola". Sino mostrar chau
 
