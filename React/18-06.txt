@@ -15,9 +15,8 @@ SWC: compilador
 años que viene typescript
 
 ---------------package.json-------------------------
-Aca adentro hay: dependencias( dependencias: utilidades y funcionalidades que instalamos (ayudan a la página ej slider que ayuda la página, o un carrucel, estetica de la página) / Las de desarrollo son la para nosotros (ej: error de tipado o mala escritura me afecta a mi, sline me ayuda a mi)), nombre interno, dependecnias 
+Aca adentro hay: dependencias( dependencias: utilidades y funcionalidades que instalamos (ayudan a la página ej slider que ayuda la página, o un carrucel, estetica de la página) / Las de desarrollo son para nosotros (ej: error de tipado o mala escritura me afecta a mi, sline me ayuda a mi)), nombre interno, dependecnias 
 TODO la informacion interna IMPORTANTE (SI NO LO TIENE NO FUNCIONA)
-
 -------------------
 MAIN: El css (básico, o más genérico) global en el cual definimos todo diseño, se importa en MAIN
 TSCONFIG.json: Definen comfigura
