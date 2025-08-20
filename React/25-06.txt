@@ -5,7 +5,6 @@ Eventos:
 
 #Las variables de ntorno no se suben al git
 
-
 -------------------------------------------
 Instalaciones necesarias: node modules ("npm install" en la terminal)
 
