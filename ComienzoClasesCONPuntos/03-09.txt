@@ -1,0 +1,12 @@
+useState: declara una nueva variable
+set: PISA el objeto/variable/array/etc. anterior
+
+"React trata de ser mas ordenado y no tan bestia" Fede V. 2025
+
+--------------------------------------------------------------
+LOS VALORES DE UN OBJETO se pueden cambiar superponiendolos usando set y el MISMO nombre de la clave (del valor que queremos cambiar) 
+----> ej: setPersona({...persona, nombre:"Luis"})
+--------------------------------------------------------------
+
+
+Desarollo proyecto: Recomendaciones 1ro armar el mobile (diseño para el teléfono)
