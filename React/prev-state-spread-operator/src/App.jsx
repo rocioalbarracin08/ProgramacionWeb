@@ -32,7 +32,7 @@ function App() {
         {num.map((item)=> ( 
           <p>{item}</p>
         ))}
-
+        
         <button onClick= {myFunction} >Agregar número</button>
         <button onClick= {agregarPropiedad} >Agregar persona</button>
         <button onClick= {cambiarNombre}>Cambiar nombre</button>
