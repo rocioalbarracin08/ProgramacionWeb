@@ -4,7 +4,8 @@ npm create vite@latest
 seguir == enter
 "Project name": ponemos el nombre de nuestro proyecto
 enter
-
+"Javascript + SWQ"
+enter
 (Tambien con el fin de instalar modulos/nodes que son dependencias)
 ----------------------------------------------------------
 Usamos contexto para evitar el pasaje de informacion lenta, y eficiente, ej: para pasar un lapicera directamente a quien yo quiera
